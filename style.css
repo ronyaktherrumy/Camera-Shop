@@ -13,12 +13,13 @@
 
  .primary-btn {
      color: white;
-     padding: 15px 25px;
-     border-radius: 10px;
+     padding: 15px 30px;
+     border-radius: 30px;
      border: none;
      background-color: rgb(212, 15, 15);
      cursor: pointer;
      font-size: 1rem;
+     margin-top: 10px;
  }
 
  header {
@@ -30,7 +31,6 @@
  .nav-titel {
      font-family: 'Castoro', serif;
      font-size: 1.4rem;
-     /* font-family: 'Patua One', serif; */
  }
 
  .navigation {
@@ -74,29 +74,93 @@
  }
 
  /* banner section end */
-.icon{
- margin-left: 25px;
- padding: 10px 0px;
-}
-.icons{
-    text-align: center;
-    background-color: rgb(228, 226, 226);
-    /* width: 0 auto; */
-}
-.hr{
-    margin-top: 3rem;
-    width: 100%;
-    text-align: center;
-}
+ .icon {
+     margin-left: 80px;
+     padding: 10px 0px;
+ }
+
+ .icons {
+     text-align: center;
+     background-color: rgb(228, 226, 226);
+     margin-bottom: 4rem;
+ }
+
+ .hr {
+     margin-top: 3rem;
+     width: 100%;
+     text-align: center;
+ }
+
+ /* popular-collection start here  */
+
+ .popular-collection {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 50px;
+     padding: 50px;
+ }
+
+ .popular-titel {
+     text-align: center;
+     margin-bottom: 3rem;
+     font-family: 'Castoro';
+ }
+
+ .collection-titel {
+     font-family: 'Castoro';
+     font-size: 1.4rem;
+     margin: 7px 0px;
+ }
+
+ .collection-sub-titel {
+     font-size: 1.3rem;
+ }
+
+ .popular-description {
+     font-size: 1.1rem;
+     margin-top: 7px;
+     color: rgb(75, 74, 74);
+ }
+
+ .collections img {
+     width: 100%;
+ }
+
+ /* end collection section here  */
+
+ .feature {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     margin: 60px 0px;
+ }
+
+ .feature-left-img {
+     width: 100%;
+ }
+
+ .feature-right-titel {
+     font-family: 'Castoro';
+     font-size: 2.5rem;
+     margin: 5px 0px;
+ }
+
+ .feature-description {
+     font-size: 1.1rem;
+     color: rgb(75, 74, 74);
+ }
+
+ /* end  */
 
 
-
-
-
-
-
-
-
+ /* footer start here  */
+ .foot {
+     height: 60%;
+     padding: 100px;
+     background: linear-gradient(31deg, #251360 0%, #7A29A3 64.86%, #CE1AEB 100%);
+     color: white;
+     text-align: center;
+ }
 
  /* responsive style for phn*/
 
@@ -112,30 +176,84 @@
 
      .banner {
          flex-direction: column-reverse;
-padding: 20px 50px;
+         padding: 20px 50px;
      }
-     .banner-right-img{
-        height: 300px;
-        width: 100%;
-        margin: 0px auto;
+
+     .banner-right-img {
+         height: 300px;
+         width: 100%;
+         margin: 0px auto;
      }
+
      .titel {
-        font-size: 1.8rem;
-        margin-top: 15px;
-       
-    }
+         font-size: 1.8rem;
+         margin-top: 15px;
+
+     }
+
+     .icons {
+         margin-bottom: 3rem;
+     }
+
+     .icon {
+         margin-left: 20px;
+     }
+
+     /* collection  */
+     .popular-collection {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content: center;
+
+     }
+
+     .popular-titel {
+         margin-bottom: 2.2rem;
+     }
+
+     /* feature  */
+
+     .feature {
+         flex-direction: column;
+     }
+
+     .feature-left-img {
+         margin: 2rem 0px;
+     }
+
+
+     .feature-right-titel {
+         font-family: 'Castoro';
+         font-size: 2rem;
+         margin: 5px 0px;
+     }
+
+     .foot {
+         height: 40%;
+     }
  }
 
 
 
 
-
-
-/* tablet  */
+ /* tablet  */
  @media screen and (min-width:577px) and (max-width:960px) {
-    .banner {
-        justify-content: space-between;
-        gap: 80;
-        padding: 30px 60px;
-    }
+     .banner {
+         justify-content: space-between;
+         gap: 80;
+         padding: 30px 60px;
+     }
+
+     .popular-collection {
+
+         grid-template-columns: repeat(2, 1fr);
+         gap: 50px;
+         padding: 50px;
+     }
+
+     .primary-btn {
+         margin-left: 50px;
+     }
+
  }
